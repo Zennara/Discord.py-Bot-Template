@@ -21,3 +21,10 @@ except:
 #declare client
 intents = discord.Intents.all() #declare what Intents you use, these will be checked in the Discord dev portal
 client = discord.Client(intents=intents)
+
+keep_alive.keep_alive() 
+#keep the bot running after the window closes, use UptimeRobot to ping the website at least every <60min. to prevent the website from going to sleep, turning off the bot
+
+#run bot
+#Add a secret environment variable named TOKEN in replit (lock icon on left sidebar)
+client.run(os.environ.get("TOKEN"))
