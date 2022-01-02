@@ -10,3 +10,10 @@ import asyncio #not needed unless creating loop tasks etc (you'll run into it)
 import json #to write db to a json file
 import requests #to check discord api for limits/bans
 from replit import db #database storage
+
+#api limit checker
+r = requests.head(url="https://discord.com/api/v1")
+try:
+  print(f"You are being Rate Limited : {int(r.headers['Retry-After']) / 60} minutes left")
+except:
+  print("No rate limit")
