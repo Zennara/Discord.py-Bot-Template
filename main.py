@@ -22,6 +22,11 @@ except:
 intents = discord.Intents.all() #declare what Intents you use, these will be checked in the Discord dev portal
 client = discord.Client(intents=intents)
 
+@client.event
+async def on_ready():
+  print("\nYOUR_BOT_NAME Ready.\n")
+  await client.change_presence(activity=discord.Activity(type=discord.ActivityType.playing, name="with some code."))
+
 keep_alive.keep_alive() 
 #keep the bot running after the window closes, use UptimeRobot to ping the website at least every <60min. to prevent the website from going to sleep, turning off the bot
 
