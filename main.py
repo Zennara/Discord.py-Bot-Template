@@ -17,3 +17,7 @@ try:
   print(f"You are being Rate Limited : {int(r.headers['Retry-After']) / 60} minutes left")
 except:
   print("No rate limit")
+
+#declare client
+intents = discord.Intents.all() #declare what Intents you use, these will be checked in the Discord dev portal
+client = discord.Client(intents=intents)
