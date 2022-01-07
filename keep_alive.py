@@ -7,7 +7,7 @@ app = Flask('')
 #Route
 @app.route('/')
 def main():
-    return "ManageInvites Online."
+    return "YOUR_BOT Online."
 
 #run https requests
 def run():
