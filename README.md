@@ -34,6 +34,7 @@ If you do not want to read the messy comments in the code, here is a step-by-ste
 - Go to [UptimeRobot](https://www.uptimerobot.com) and sign-in / create an account
 - Add a **New Monitor**
 - Select the **HTTP(S)** monitor type.
+- Enter your link to your repl. You can find it [here](https://cdn.discordapp.com/attachments/929182726203002920/929182736546140201/unknown.png).
 - Add a name to easily find it
 - Make the **Monitoring Interval** anything less than 60 minutes.
 
